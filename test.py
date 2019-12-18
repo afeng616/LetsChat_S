@@ -8,11 +8,28 @@ from module.process import *
 
 
 def process_sql_test():
-    r = SQLProcess().join_scan()
+    r = SQLProcess().members()
     for i in r:
-        a, b, c = i[1], i[2], i[3]
-        print(a, b, c)
+        print(i)
+
+
+def str_test():
+    str = "sss,aasdf,"
+    print(str[:-1].split(','))
+
+
+def if_else_test():
+    s = 'aabbb'
+    if s[:2] == 'aa':
+        print('aa')
+    elif s:
+        print('bb')
+
+
+def list_test():
+    l = (('3117005390', 'afeng'), ('3117004494', 'jian'))
+    print(l.index((3117005390, 'afeng')))
 
 
 if __name__ == '__main__':
-    process_sql_test()
+    list_test()

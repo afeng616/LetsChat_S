@@ -3,6 +3,7 @@
 # Description: LetsChat服务端UI
 # Author: Afeng
 # Date: 2019/11/24
+import _thread
 
 from module.process import *
 
@@ -29,9 +30,11 @@ class UI(object):
         self.menu = Menu(self.frm_r, tearoff=0)  # 双击菜单
 
         self.process_sql = SQLProcess()
-        self.process_udp = UDPProcess(self.text_history)
+        self.process_udp = UDPProcess(self.text_history, self.list_persons)
         self.ip = self.process_udp.ip
-        self.users = self.process_udp.users
+        self.users = self.process_udp.users_addr
+        self.process_udp.members = self.process_sql.members()  # 初始化群成员集合[(id, nickname), ]
+        self.process_udp.init_users_status()
 
     def show(self):
         # 主窗口配置
@@ -65,8 +68,6 @@ class UI(object):
         label.pack()
         sb = Scrollbar(self.frm_r)
         sb.pack(side='right', fill=Y)
-        for i in range(20):
-            self.list_persons.insert(END, str(i) + '-JoJo')
         self.list_persons.config(yscrollcommand=sb.set)
         self.list_persons.bind('<Double-Button-1>', self.do_popup)
         self.list_persons.pack(padx=5)
@@ -78,10 +79,6 @@ class UI(object):
         self.menu.add_command(label='查看信息')
 
         self.window.mainloop()
-
-    # TODO: 更新成员状态
-    def update_users_status(self):
-        pass
 
     # 发送消息并展示
     def send_message(self):
@@ -136,6 +133,7 @@ class UI(object):
             checkbtn = Checkbutton(window_mng, variable=check,
                                    text='[' + str(time) + ']' + nick + '申请进群',
                                    font='Fixdsys 10 bold', pady=20)
+            logging.info('[' + id + ']' + nick + '申请进群')
             checkbtns.append(checkbtn)
             checkbtn.pack()
         button_agress.pack()

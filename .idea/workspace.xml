@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ffd0166-6cfd-433e-a0a3-d65e0c81fae6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/window.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,6 +60,28 @@
       <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../UDPSocket/udp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="process (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LetsChat_S" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Afeng\AppData\Local\Programs\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../UDPSocket" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,6 +160,7 @@
       <list>
         <item itemvalue="Python.window" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.process (1)" />
         <item itemvalue="Python.process" />
       </list>
     </recent_temporary>
@@ -160,8 +183,19 @@
       <workItem from="1574905470016" duration="605000" />
       <workItem from="1574998748069" duration="27143000" />
       <workItem from="1575685707099" duration="17000" />
-      <workItem from="1576404404175" duration="13148000" />
+      <workItem from="1576404404175" duration="13234000" />
+      <workItem from="1576505485213" duration="1424000" />
+      <workItem from="1576556886855" duration="14869000" />
+      <workItem from="1576633503363" duration="6924000" />
     </task>
+    <task id="LOCAL-00001" summary="进群申请完成，用户列表待完善">
+      <created>1576496226347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576496226347</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,9 +214,14 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="进群申请完成，用户列表待完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="进群申请完成，用户列表待完善" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LetsChat_S$process.coverage" NAME="process Coverage Results" MODIFIED="1575108291604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../UDPSocket" />
-    <SUITE FILE_PATH="coverage/LetsChat_S$test.coverage" NAME="test Coverage Results" MODIFIED="1576491430603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../UDPSocket" />
-    <SUITE FILE_PATH="coverage/LetsChat_S$window.coverage" NAME="window Coverage Results" MODIFIED="1576496114333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../UDPSocket" />
+    <SUITE FILE_PATH="coverage/LetsChat_S$process__1_.coverage" NAME="process (1) Coverage Results" MODIFIED="1576638101951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../UDPSocket" />
+    <SUITE FILE_PATH="coverage/LetsChat_S$test.coverage" NAME="test Coverage Results" MODIFIED="1576638190192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../UDPSocket" />
+    <SUITE FILE_PATH="coverage/LetsChat_S$window.coverage" NAME="window Coverage Results" MODIFIED="1576640800685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../UDPSocket" />
   </component>
 </project>
